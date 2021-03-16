@@ -1,13 +1,7 @@
 <?php 
-function sum($carry,$item)
+function makeNegative(float $num)
 {
-    $carry += $item;
-    return $carry;
+    return $num <= 0 ? $num : -$num;
 }
 
-sum(12,3);
-$a = [-1,4,2] ;
-
-$o = (array_sum(array_filter($a, function($v){return $v > 0;})));
-
-echo $o ;
+echo makeNegative(-12.98) ;
