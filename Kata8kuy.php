@@ -1,12 +1,11 @@
 <?php 
-function removeChar(string $s ="eloquent") : string{
-$sTab =  str_split($s); $news = null;
-     foreach ($sTab as $key => $value) {
-         if ($key == 0 || $key == strlen($s)-1);
-         else $news .= $value;
-     }
-     return $news;
+function solution($str="world"){
+    $strSplited =str_split($str,1) ;
+    $reversed ='';
+    for ($i=strlen($str)-1; $i >= 0  ; $i--) { 
+        $reversed .= $strSplited[$i];
+    }
+    return $reversed;
 }
-// order bypopularity
 
-echo removeChar();
+echo solution();
