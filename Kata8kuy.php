@@ -1,11 +1,9 @@
 <?php 
-function solution($str="world"){
-    $strSplited =str_split($str,1) ;
-    $reversed ='';
-    for ($i=strlen($str)-1; $i >= 0  ; $i--) { 
-        $reversed .= $strSplited[$i];
-    }
-    return $reversed;
+function sumnation($n=2)
+{
+ foreach (range(0, $n) as $value) {
+     echo $value;
+ }
 }
 
-echo solution();
+echo sumnation();
