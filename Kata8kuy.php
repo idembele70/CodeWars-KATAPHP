@@ -1,9 +1,6 @@
 <?php 
-function sumnation($n=2)
-{
- foreach (range(0, $n) as $value) {
-     echo $value;
- }
+function no_space(string $s="jojl 12"): string {
+    return str_replace(' ','',$s);
 }
 
-echo sumnation();
+echo no_space();
