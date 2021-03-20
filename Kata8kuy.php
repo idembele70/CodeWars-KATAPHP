@@ -1,12 +1,6 @@
 <?php
-function boolToWord($bool = false)
-{
-    if ($bool === false) {
-        return 'No';
-    } else {
-        return
-            'Yes';
-    }
+function smallestInteger($arr=[3, 5, 10, 1, 4, 55]) : int {
+    return min($arr);
 }
 
-echo boolToWord();
+echo smallestInteger();
