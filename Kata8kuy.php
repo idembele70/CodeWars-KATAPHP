@@ -1,10 +1,12 @@
 <?php
-function smallestInteger($arr=[3, 5, 10, 1, 4, 55]) : int {
-    $min = $arr[0];
-    foreach ($arr as $value) {
-      $min > $value ? $min = $value : $min;
+function squareSum($number=[1,2]) : int{
+    $sum = 0;
+    for ($i=0; $i < sizeof($number) ; $i++) { 
+        $sum +=  pow($number[$i],2);
     }
-    return $min;
+    return $sum ;
 }
 
-echo smallestInteger();
+
+
+echo squareSum();
