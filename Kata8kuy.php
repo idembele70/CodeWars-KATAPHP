@@ -1,12 +1,12 @@
 <?php
-function squareSum($number=[1,2]) : int{
-    $sum = 0;
-    for ($i=0; $i < sizeof($number) ; $i++) { 
-        $sum +=  pow($number[$i],2);
-    }
-    return $sum ;
-}
+// function squareSum($numbers=[1,2]) : int{
+    $numbers=[1,2];
+   echo array_reduce($numbers, function($carry, $index){
+    $carry += $index * $index;
+   });
+//    return 10;
+// }
 
 
 
-echo squareSum();
+// echo squareSum();
