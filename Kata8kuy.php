@@ -1,12 +1,27 @@
 <?php
-// function squareSum($numbers=[1,2]) : int{
-    $numbers=[1,2];
-   echo array_reduce($numbers, function($carry, $index){
-    $carry += $index * $index;
-   });
-//    return 10;
-// }
+function squareSum($numbers): int
+{
+    $sum = null;
+    if ($numbers != null) {
+        for ($i=0; $i < sizeof($numbers); $i++) { 
+          $sum +=  $numbers[$i] * $numbers[$i];
+        }
+    } else {
+        $sum = 0;
+    }
+    return $sum;
+}
 
 
 
-// echo squareSum();
+echo squareSum([1, 2]);
+echo squareSum([]);
+
+/* 
+function sum($carry, $index)
+    {
+        $carry += $index * $index;
+        return $carry;
+    }
+   return $numbers != null ? array_reduce($numbers, "sum") : 0;
+    */
