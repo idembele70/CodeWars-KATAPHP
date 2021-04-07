@@ -1,7 +1,11 @@
 <?php
-function is_disvisbile($n, $x, $y) : bool{
-  return $n % $x === 0 && $n % $y === 0 ? true : false;
-  
+function is_disvisbile($n, $x, $y): bool
+{
+    if ($n % $x === 0 && $n % $y === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
-echo is_disvisbile(4,2,10);
+echo is_disvisbile(4, 2, 10);
