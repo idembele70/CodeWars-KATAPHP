@@ -1,11 +1,25 @@
 <?php
-function is_disvisbile($n, $x, $y): bool
+function basicOp($op='+', $val1=4, $val2=5): int
 {
-    if ($n % $x === 0 && $n % $y === 0) {
-        return true;
-    } else {
-        return false;
-    }
-}
+{{    switch ($op) {
+        case '+':
+            $res = $val1 + $val2;
+            break;
+        case '-':
+            $res = $val1 - $val2;
+            break;
+        case '*':
+            $res = $val1 * $val2;
+            break;
+        case '/':
+            $res = $val1 / $val2;
+            break;
 
-echo is_disvisbile(4, 2, 10);
+        default:
+            "This operator doesn't exist !";
+            break;
+    }
+    return $res;
+}
+}}
+echo basicOp();
