@@ -1,6 +1,7 @@
 <?php
-function centuryFromYear($year=1705): int{
-    return round(ceil($year +99)/100);
+function is_disvisbile($n, $x, $y) : bool{
+  return $n % $x === 0 && $n % $y === 0 ? true : false;
+  
 }
 
-echo centuryFromYear();
+echo is_disvisbile(4,2,10);
