@@ -1,5 +1,9 @@
 <?php
-function litres($t){
-    return floor($t * 0.5);
+function solution($a=['a', 'b', 'c', 'd', 'e', "f"],$x="a"){
+    foreach ($a as $value) {
+        if ($value === $x) return true;
+    }
+    return false;
 }
-echo litres(5);
+
+echo solution();
